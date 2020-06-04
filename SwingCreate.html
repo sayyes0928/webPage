@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./../allCSS/SwingCSS.css" />
+    <link rel="stylesheet" href="./../allCSS/TopCSS.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./../allJs/SwingJS.js" type="text/javascript"></script>
+    <style type="text/css"></style>
+  </head>
+  <body>
+    <form name="swing">
+      <header class="header">
+        <div class="topbg"></div>
+
+        <nav>
+          <ul id="navbarTop">
+            <li><a href="#">login |</a></li>
+            <li><a href="#">join |</a></li>
+            <li><a href="#">mypage</a></li>
+          </ul>
+
+          <ul id="menu">
+            <li><a href="#">intro </a></li>
+            <li><a href="#">menu A </a></li>
+            <li><a href="#">menu B </a></li>
+            <li><a href="#">menu C </a></li>
+          </ul>
+        </nav>
+      </header>
+      <table>
+        <tr>
+          <td class="inTitle">ID</td>
+        </tr>
+        <tr>
+          <td><input type="text" name="id" class="insert" /></td>
+        </tr>
+        <tr>
+          <td class="inTitle">PW</td>
+        </tr>
+        <tr>
+          <td><input type="text" name="pw" class="insert" /></td>
+        </tr>
+        <tr>
+          <td class="inTitle">PwConfirm</td>
+        </tr>
+        <tr>
+          <td><input type="text" name="pwConfirm" class="insert" /></td>
+        </tr>
+        <tr>
+          <td class="inTitle">NickName</td>
+        </tr>
+        <tr>
+          <td><input type="text" name="nick" class="insert" /></td>
+        </tr>
+        <tr>
+          <td class="inTitle">Year</td>
+        </tr>
+        <tr>
+          <td><input type="text" name="year" class="insert" /></td>
+        </tr>
+        <tr>
+          <td align="right">
+            <input
+              type="button"
+              value="next"
+              id="next"
+              onClick="joinNext(swing)"
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var t_trans;
+      t_trans = 250;
+      document.write("9p");
+      document.write("변수 t_trans의 값 = " + t_trans + "<br/>");
+      t_trans = "문자형 데이터입니다...";
+      document.write("변수 t_trans의 값 = " + t_trans + "<br/><br/>");
+
+      document.write("13-2 <br/>");
+      var x = 5;
+      var y = "5";
+      var result;
+
+      result = x > y;
+      document.write("x>y : " + result + "<br/>");
+      result = x == y;
+      document.write(
+        "x==y : " + result + "   숫자로 변환한 값이 같느냐" + "<br/>"
+      );
+      result = x === y;
+      document.write("x===y : " + result + "   박싱의 형태가 같느냐" + "<br/>");
+      result = x != y;
+      document.write("x!=y : " + result + "<br/>");
+      result = x !== y;
+      document.write("x!==y : " + result + "<br/><br/><br/>");
+
+      document.write("15-1");
+      var gender = "M";
+      var age = 21;
+      if (gender == "M") {
+        if (age >= 19) {
+          result = "남자 성인입니다.";
+        } else {
+          result = "남자 미성년자 입니다";
+        }
+      } else {
+        if (age >= 19) {
+          result = "여자 성인입니다.";
+        } else {
+          result = "여자 미성년자입니다.";
+        }
+      }
+      document.write("당신은" + result + "<p/><br/><br/>");
+
+      document.write("16-1");
+      var text;
+      var week = new Date().getDay();
+      switch (week) {
+        case 1:
+        case 2:
+          text = "HTML5";
+          break;
+        case 4:
+          text = "자바스크립트";
+          break;
+        case 5:
+        case 6:
+          text = "영어";
+          break;
+        case 0:
+        default:
+          text = "수영";
+      }
+      document.write(
+        "오늘은 <b>" + text + "</b> 학습하는 날입니다. <p/><br/><br/><br/>"
+      );
+    </script>
+    <script>
+      document.write("17-3 <br/>");
+      var i, j;
+      outloop: for (i = 0; i < 3; i++) {
+        inloop: for (j = 0; j < 3; j++) {
+          if (i === 1 && j === 0) {
+            continue outloop;
+          }
+          document.write("i = " + i + ", j = " + j + "<br/>");
+        }
+      }
+    </script>
+    <script>
+      document.write("<br/><br/>18<br/>");
+      var city = ["Seoul", "Busan", "Incheon"];
+      function printArr() {
+        var i;
+        for (i in city) {
+          document.write("배열데이터[" + i + "] = " + city[i] + "<br/>");
+        }
+      }
+      printArr();
+    </script>
+    <script>
+      document.write("<br/><br/>22<br/>");
+      var result;
+      function add(name, n) {
+        document.write(name + "학생이 1부터 " + n + "까지 덧셈 수행 <br>");
+        var sum = 0;
+        for (var i = 1; i <= n; i++) {
+          sum += i;
+        }
+        return sum;
+      }
+      result = add("홍길동", 10);
+      document.write("결과 : " + result + "<p/>");
+      result = add("이영희", 100);
+      document.write("결과 : " + result + "<p/>");
+    </script>
+    <script>
+      document.write("<br/><br/>20<br/>");
+      var data = { f0: 100, f1: 200, f2: 300 };
+      data["f3"] = 400;
+      data.f4 = 500;
+      document.write(data.f0 + "<br/>");
+      document.write(data.f1 + "<br/>");
+      document.write(data["f2"] + "<br/>");
+      document.write(data["f3"] + "<br/>");
+      document.write(data["f4"] + "<br/>" + "<br/>");
+
+      for (var i in data) {
+        document.write(i + "<br/>");
+        document.write(data[i] + "<br/>");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,32 @@
+table {
+  margin: 50 auto;
+  border-style: dotted;
+  border-color: #424242;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-color: #7b4903;
+  border-radius: 8px;
+  /* border-collapse:border; */
+}
+.insert {
+  border-width: 1pt;
+  border-color: #e0ecf8;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: #fafafa;
+  padding: 9px;
+}
+.inTitle {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #3e2501;
+}
+#next {
+  width: 100px;
+  height: 30px;
+  background-color: #e6e6e6;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  margin: 15px;
+}

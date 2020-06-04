@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./../allCSS/SwingCSS02.css" />
+    <link rel="stylesheet" href="./../allCSS/TopCSS.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form>
+      <header>
+        <div class="topbg"></div>
+
+        <nav>
+          <ul id="navbarTop">
+            <li><a href="#">login |</a></li>
+            <li><a href="#">join |</a></li>
+            <li><a href="#">mypage</a></li>
+          </ul>
+
+          <ul id="menu">
+            <li><a href="#">intro </a></li>
+            <li><a href="#">menu A </a></li>
+            <li><a href="#">menu B </a></li>
+            <li><a href="#">menu C </a></li>
+          </ul>
+        </nav>
+      </header>
+      <table>
+        <tr>
+          <td class="inTitle">Name</td>
+        </tr>
+        <tr>
+          <td><input type="text" name="name" class="insert" /></td>
+        </tr>
+        <tr>
+          <td class="inTitle">Age</td>
+        </tr>
+        <tr>
+          <td><input type="text" name="age" class="insert" /></td>
+        </tr>
+        <tr>
+          <td class="inTitle">Mail</td>
+        </tr>
+        <tr>
+          <td><input type="text" name="mail" class="insert" /></td>
+        </tr>
+        <tr>
+          <td>
+            <select name="mail" size="1">
+              <option value="null"> Select Mail </option>
+              <option value="gmail.com">gmail.com</option>
+              <option value="naver.com">naver.com</option>
+              <option value="direct">직접 입력</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td id="mailAgree">
+            <input type="checkbox" name="mailAgree" value="" />Email Agreement
+          </td>
+        </tr>
+        <tr>
+          <td id="gender">
+            <input
+              type="radio"
+              name="gender"
+              value="Leader"
+              checked="on"
+            />Leader
+            <input type="radio" name="gender" value="follower" />follower
+          </td>
+        </tr>
+        <tr>
+          <td class="inTitle">Nation</td>
+        </tr>
+        <tr>
+          <td><input type="text" name="year" class="insert" /></td>
+        </tr>
+        <tr>
+          <td align="right">
+            <input type="submit" value="submit" id="submit" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
