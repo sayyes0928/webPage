@@ -10,12 +10,12 @@ function submitAll(Joinform) {
     var agreeok = agree(Joinform);
 
     if (
-        id == "" ||
-        pw == -1 ||
-        name == "" ||
-        mailID == "" ||
-        mailAdd == -1 ||
-        job == -1
+        !id ||
+        !pw ||
+        !name ||
+        !mailID ||
+        !mailAdd ||
+        !job
     ) {
         alert("입력안 된 값이 있습니다.");
         return -1;
@@ -53,16 +53,16 @@ function submitAll(Joinform) {
 }
 function pwcheck(Joinform) {
     var pwcheck = Joinform.password.value;
-    if (pwcheck != "") {
+    if (pwcheck != false) {
         if (Joinform.password.value == Joinform.passwordCheck.value) {
             pwcheck = Joinform.password.value;
         } else {
             alert("비밀번호가 다릅니다");
-            pwcheck = "-1";
+            pwcheck = false;
         }
     } else {
         alert("PW값을 입력하세요");
-        pwcheck = "-1";
+        pwcheck = false;
     }
     return pwcheck;
 }
@@ -70,7 +70,8 @@ function mailaddcall(mail) {
     var mailadd;
 
     if (mail.options[0].selected) {
-        mailadd = -1;
+        mailadd = false;
+        alert("mail을 선택하세요");
     } else if (mail.options[1].selected) {
         mailadd = "gmail.com";
     } else {
@@ -87,7 +88,7 @@ function jobsel(Joinform) {
         }
     }
     if (jobselect == undefined) {
-        jobselect = "-1";
+        jobselect = false;
     }
     return jobselect;
 }
