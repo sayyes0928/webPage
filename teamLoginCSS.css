@@ -1,0 +1,23 @@
+* {
+  border: 1px dotted black;
+}
+main {
+  width: 980px;
+  height: 1000px;
+}
+#mainBody {
+  width: 980px;
+  height: 1000px;
+}
+#userIDContainer {
+  margin: 0px;
+  padding: 0px;
+}
+#userIDContainer li {
+  list-style: none;
+  display: inline;
+}
+#userPassContainer {
+  list-style: none;
+  display: inline;
+}
